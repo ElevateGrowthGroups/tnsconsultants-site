@@ -4,39 +4,38 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Contact | TNS Consulting</title>
-  <meta name="description" content="Contact TNS Consulting for IT network design, deployment, migration, and troubleshooting services." />
+  <meta name="description" content="Contact TNS Consulting for network design, deployment, SD-WAN, migrations, and troubleshooting." />
   <meta name="robots" content="index,follow" />
   <meta property="og:title" content="Contact | TNS Consulting" />
-  <meta property="og:description" content="Request a consultation for network design, deployment, migration, or optimization." />
+  <meta property="og:description" content="Request a consult with TNS Consulting." />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://www.tnsconsultants.net/contact.html" />
-
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cpath fill='%2300E5FF' d='M32 6l22 12v28L32 58 10 46V18z'/%3E%3Cpath fill='%230B1220' d='M32 14l14 8v20l-14 8-14-8V22z'/%3E%3C/svg%3E" />
+  <meta property="og:url" content="https://tnsconsultants.net/contact.html" />
   <link rel="stylesheet" href="assets/css/styles.css" />
 </head>
-
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
 
   <header class="site-header">
     <div class="container header-inner">
       <a class="brand" href="index.html" aria-label="TNS Consulting home">
-  <img src="assets/img/logo.png" alt="TNS Consulting logo" class="brand-logo" />
-  <span class="brand-text">
-    <span class="brand-name">TNS Consulting</span>
-    <span class="brand-sub">IT Networking Design & Deployment</span>
-  </span>
-</a>
+        <span class="brand-logo-wrap" aria-hidden="true">
+          <img src="assets/img/logo.png" alt="" class="brand-logo" />
+        </span>
+        <span class="brand-text">
+          <span class="brand-name">TNS Consulting</span>
+          <span class="brand-sub">IT Networking Design &amp; Deployment</span>
+        </span>
+      </a>
 
       <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
         <span class="sr-only">Toggle navigation</span>
-        <span class="nav-toggle-lines" aria-hidden="true"></span>
+        <span class="nav-toggle-lines" aria-hidden="true"><span></span></span>
       </button>
 
       <nav id="site-nav" class="site-nav" aria-label="Primary">
         <a class="nav-link" href="index.html">Home</a>
         <a class="nav-link" href="services.html">Services</a>
-        <a class="nav-cta" href="contact.html">Contact</a>
+        <a class="nav-cta is-active" href="contact.html">Contact</a>
       </nav>
     </div>
   </header>
@@ -44,29 +43,27 @@
   <main id="main">
     <section class="page-hero">
       <div class="container">
-        <div class="pill">
-          <span class="dot"></span>
-          <span>Clear scope • Practical recommendations • Clean handoff</span>
-        </div>
+        <div class="pill"><span class="dot"></span> Typical response: 1 business day</div>
         <h1 class="page-title">Contact</h1>
         <p class="page-lede">
-          Share your environment details and what you’re trying to accomplish. We’ll respond with next steps.
+          Share a short description of your environment and goals. We’ll respond with next steps and a recommended approach.
         </p>
       </div>
     </section>
 
     <section class="section">
-      <div class="container two-col">
-        <div class="panel form-panel">
-          <div class="panel-head">
-            <div class="status-led" aria-hidden="true"></div>
-            <div>
-              <div class="panel-title">Request a consultation</div>
-              <div class="panel-sub">Email goes to info@tnsconsultants.net</div>
-            </div>
+      <div class="container">
+        <div class="cards compact">
+          <div class="card">
+            <h3>Direct email</h3>
+            <p><a href="mailto:info@tnsconsultants.net">info@tnsconsultants.net</a></p>
+            <div class="divider small"></div>
+            <p class="page-lede" style="margin:0;">Or use the form below.</p>
           </div>
 
-          <div class="panel-body">
+          <div class="card">
+            <h3>Request a consult</h3>
+
             <form class="form" action="https://formspree.io/f/mnjbjlol" method="POST">
               <div class="field-row">
                 <div class="field">
@@ -74,122 +71,89 @@
                   <input id="name" name="name" type="text" autocomplete="name" required />
                 </div>
                 <div class="field">
-                  <label for="company">Company</label>
-                  <input id="company" name="company" type="text" autocomplete="organization" />
-                </div>
-              </div>
-
-              <div class="field-row">
-                <div class="field">
                   <label for="email">Email</label>
                   <input id="email" name="email" type="email" autocomplete="email" required />
                 </div>
-                <div class="field">
-                  <label for="phone">Phone (optional)</label>
-                  <input id="phone" name="phone" type="tel" autocomplete="tel" />
-                </div>
               </div>
 
               <div class="field-row">
                 <div class="field">
-                  <label for="topic">Topic</label>
-                  <select id="topic" name="topic" required>
-                    <option value="" selected disabled>Select one</option>
-                    <option>Network Design / Architecture</option>
-                    <option>Deployment / Migration</option>
-                    <option>Optimization / Troubleshooting</option>
-                    <option>Advisory / Design Validation</option>
-                    <option>Other</option>
-                  </select>
+                  <label for="company">Company (optional)</label>
+                  <input id="company" name="company" type="text" autocomplete="organization" />
                 </div>
                 <div class="field">
-                  <label for="timeline">Timeline</label>
-                  <select id="timeline" name="timeline" required>
-                    <option value="" selected disabled>Select one</option>
-                    <option>ASAP</option>
-                    <option>1–2 weeks</option>
-                    <option>2–4 weeks</option>
-                    <option>1–2 months</option>
-                    <option>3+ months</option>
+                  <label for="topic">Topic</label>
+                  <select id="topic" name="topic" required>
+                    <option value="" disabled selected>Select one</option>
+                    <option>Network Architecture / Design</option>
+                    <option>Deployment / Migration</option>
+                    <option>SD-WAN / WAN Modernization</option>
+                    <option>Troubleshooting / Optimization</option>
+                    <option>Security / Firewall</option>
+                    <option>Other</option>
                   </select>
                 </div>
               </div>
 
               <div class="field">
-                <label for="details">Project details</label>
-                <textarea id="details" name="details" rows="6" placeholder="Sites, vendors, circuits (if known), current issues, goals, and constraints..." required></textarea>
+                <label for="message">Message</label>
+                <textarea id="message" name="message" placeholder="Describe your environment (sites, vendors, current issues, timeline)..." required></textarea>
               </div>
 
               <!-- Honeypot -->
-              <input type="text" name="_gotcha" class="hp" tabindex="-1" autocomplete="off" />
-              <input type="hidden" name="_subject" value="New Inquiry: TNS Consulting" />
+              <div class="hp">
+                <label>Leave this field empty</label>
+                <input name="_gotcha" />
+              </div>
 
               <div class="form-actions">
-                <button class="btn btn-primary" type="submit">Send message</button>
-                <a class="btn btn-ghost" href="mailto:info@tnsconsultants.net">Email instead</a>
+                <button class="btn btn-primary" type="submit">Send</button>
+                <a class="btn btn-ghost" href="services.html">Review services</a>
               </div>
 
               <p class="form-note">
-                Prefer email? Reach us at <a href="mailto:info@tnsconsultants.net">info@tnsconsultants.net</a>.
+                By submitting, you agree to be contacted about this request. No marketing lists.
               </p>
             </form>
           </div>
         </div>
-
-        <aside class="cta-card">
-          <h3>What to include</h3>
-          <ul class="list compact">
-            <li>Number of sites and approximate users</li>
-            <li>WAN/circuit details (if known)</li>
-            <li>Critical apps and uptime expectations</li>
-            <li>Security/segmentation requirements</li>
-            <li>Constraints: budget, timeline, vendors</li>
-          </ul>
-
-          <div class="divider small"></div>
-
-          <h3>Response expectations</h3>
-          <p>
-            You’ll receive a clear next-step plan: discovery questions, scope options, and a recommended approach.
-          </p>
-
-          <div class="cta-note">Email: <a href="mailto:info@tnsconsultants.net">info@tnsconsultants.net</a></div>
-        </aside>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
-  <div class="container footer-inner">
-    <div class="footer-left">
-      <div class="footer-brand">
-        <img src="assets/img/logo.png" alt="TNS Consulting logo" class="footer-logo" />
-        <div>
-          <div class="footer-name">TNS Consulting</div>
-          <div class="footer-sub">IT Networking Design &amp; Deployment</div>
+    <div class="container footer-inner">
+      <div class="footer-left">
+        <div class="footer-brand">
+          <span class="footer-logo-wrap" aria-hidden="true">
+            <img src="assets/img/logo.png" alt="" class="footer-logo" />
+          </span>
+          <div>
+            <div class="footer-name">TNS Consulting</div>
+            <div class="footer-sub">IT Networking Design &amp; Deployment</div>
+          </div>
+        </div>
+
+        <div class="footer-meta">
+          <a href="mailto:info@tnsconsultants.net">info@tnsconsultants.net</a>
+          <span class="sep">•</span>
+          <span>© <span data-year></span> TNS Consulting</span>
+        </div>
+
+        <div class="footer-legal">
+          Cisco®, Juniper®, HPE®, Arista®, Palo Alto Networks®, and Fortinet® are trademarks of their respective owners.
+          TNS Consulting is an independent consulting firm.
         </div>
       </div>
 
-      <div class="footer-meta">
-        <a href="mailto:info@tnsconsultants.net">info@tnsconsultants.net</a>
-        <span class="sep">•</span>
-        <span>© <span data-year></span> TNS Consulting</span>
-      </div>
-
-      <div class="footer-legal">
-        Cisco®, Juniper®, HPE®, Arista®, Palo Alto Networks®, and Fortinet® are trademarks of their respective owners.
-        TNS Consulting is an independent consulting firm.
+      <div class="footer-right">
+        <a class="footer-link" href="index.html">Home</a>
+        <a class="footer-link" href="services.html">Services</a>
+        <a class="footer-link" href="contact.html">Contact</a>
       </div>
     </div>
+  </footer>
 
-    <div class="footer-right">
-      <a class="footer-link" href="index.html">Home</a>
-      <a class="footer-link" href="services.html">Services</a>
-      <a class="footer-link" href="contact.html">Contact</a>
-    </div>
-  </div>
-</footer>
-
-  <script src="assets/js/main.js" defer></script>
+  <script src="assets/js/main.js"></script>
 </body>
 </html>
