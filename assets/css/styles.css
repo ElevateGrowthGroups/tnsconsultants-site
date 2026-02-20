@@ -83,6 +83,47 @@ a:hover{ text-decoration:underline; text-underline-offset:3px; }
 }
 
 .brand{ display:flex; align-items:center; gap:12px; }
+/* Header Logo (hard clamp so it never becomes huge) */
+.brand{
+  display:flex;
+  align-items:center;
+  gap:12px;
+  min-width:0;
+}
+
+.brand-logo{
+  height:44px;
+  width:44px;
+  max-height:44px;
+  max-width:44px;
+  object-fit:contain;
+  display:block;
+  flex:0 0 auto;
+  border-radius:10px;
+  filter: drop-shadow(0 10px 24px rgba(0,0,0,.45));
+}
+
+/* Protect against any global img rules */
+.site-header img.brand-logo{
+  height:44px !important;
+  width:44px !important;
+  max-height:44px !important;
+  max-width:44px !important;
+}
+
+.brand-text{ min-width:0; }
+.brand-name{ white-space:nowrap; }
+.brand-sub{ white-space:nowrap; }
+
+@media (max-width: 768px){
+  .brand-logo,
+  .site-header img.brand-logo{
+    height:38px !important;
+    width:38px !important;
+    max-height:38px !important;
+    max-width:38px !important;
+  }
+}
 .brand-mark{
   width:34px;height:34px;border-radius:12px;
   background:
@@ -473,6 +514,25 @@ textarea{ resize:vertical; min-height:120px; }
 .form-panel .panel-body{ padding-top:12px; }
 
 /* Footer */
+/* Footer logo */
+.footer-logo{
+  height: 42px;
+  width: 42px;
+  max-height: 42px;
+  max-width: 42px;
+  object-fit: contain;
+  display: block;
+  flex: 0 0 auto;
+  border-radius: 10px;
+  filter: drop-shadow(0 10px 24px rgba(0,0,0,.35));
+}
+
+.footer-legal{
+  margin-top: 10px;
+  opacity: .65;
+  font-size: 12px;
+  line-height: 1.45;
+}
 .site-footer{
   border-top:1px solid rgba(138,165,255,.10);
   padding:22px 0;
@@ -523,17 +583,4 @@ textarea{ resize:vertical; min-height:120px; }
 
   .field-row{ grid-template-columns:1fr; }
   .footer-inner{ flex-direction:column; align-items:flex-start; }
-
-  /* TNS Logo */
-.brand-logo{
-  height: 46px;
-  width: auto;
-  display: block;
-  border-radius: 10px; /* soft edges if any pixels exist */
-  filter: drop-shadow(0 10px 24px rgba(0,0,0,.45));
-}
-
-@media (max-width: 768px){
-  .brand-logo{ height: 40px; }
-}
 }
