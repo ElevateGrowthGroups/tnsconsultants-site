@@ -1,27 +1,16 @@
-(function () {
+(function(){
   // Footer year
-  const y = document.querySelectorAll("[data-year]");
-  const year = new Date().getFullYear();
-  y.forEach((el) => (el.textContent = String(year)));
+  var y = document.querySelectorAll("[data-year]");
+  var year = new Date().getFullYear();
+  y.forEach(function(el){ el.textContent = year; });
 
-  // Mobile nav
-  const toggle = document.querySelector(".nav-toggle");
-  const nav = document.getElementById("site-nav");
-
-  if (toggle && nav) {
-    toggle.addEventListener("click", () => {
-      const isOpen = nav.classList.toggle("is-open");
-      toggle.setAttribute("aria-expanded", String(isOpen));
-    });
-
-    // Close menu when clicking a link (mobile)
-    nav.querySelectorAll("a").forEach((a) => {
-      a.addEventListener("click", () => {
-        if (nav.classList.contains("is-open")) {
-          nav.classList.remove("is-open");
-          toggle.setAttribute("aria-expanded", "false");
-        }
-      });
+  // Mobile nav toggle
+  var btn = document.querySelector(".nav-toggle");
+  var nav = document.getElementById("site-nav");
+  if(btn && nav){
+    btn.addEventListener("click", function(){
+      var open = nav.classList.toggle("is-open");
+      btn.setAttribute("aria-expanded", open ? "true" : "false");
     });
   }
 })();
